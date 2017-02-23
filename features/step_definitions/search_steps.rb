@@ -8,8 +8,8 @@ When(/^I search for a video$/) do
 end
 
 And /^I select the video I want$/ do
-  on(SearchPage) do |search|
-    search.video_search_results_element.click
+  on SearchPage do |page|
+    page.non_ad_results[0].go_to_video
   end
 end
 
