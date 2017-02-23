@@ -10,9 +10,8 @@ World PageObject::PageFactory
 
 Before do
   @browser = browser
-  @browser.driver.manage.window.maximize
 end
 
 at_exit do
-  #browser.close
+  browser.close
 end

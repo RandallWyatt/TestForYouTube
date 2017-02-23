@@ -14,5 +14,5 @@ And /^I select the video I want$/ do
 end
 
 Then(/^I will be able to watch the video$/) do
-  pending #@current_page.should_contain_text 'Whoopee Cushion'
+  @current_page.should_contain_text 'Published'
 end

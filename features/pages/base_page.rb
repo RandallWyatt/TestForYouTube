@@ -6,4 +6,8 @@ class BasePage
       self.text.include? text
     }
   end
+
+  def initialize_page
+    #fail ##potentially useful
+  end
 end
